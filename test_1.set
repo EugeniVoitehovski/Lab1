@@ -1,0 +1,42 @@
+global int d = 5;
+
+func int addInt(int p)
+    {
+        p = p + 2;
+        return p;
+    }
+
+program
+   {
+        print("Test");
+        print("Test");
+        print("Test");
+        print("Test");
+        int a = 2;
+        call show(a);
+        int test = call addInt(a);
+        if (a == 3)
+            {
+                print("3, hi");
+            }
+        else
+            {
+                print("Its not 3!");
+            }
+        call show(test);
+        element v = "abc";
+        set c = {v};
+        set h = c * c;
+        for (element e : h)
+            {
+                print(e);
+            }
+        while (a < 3)
+            {
+            a = a + 1;
+            }
+   }
+func show(int k)
+   {
+       print(k);
+   }
